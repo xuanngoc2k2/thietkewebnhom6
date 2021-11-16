@@ -6,6 +6,83 @@
 body{
     background-color: rgb(198, 233, 235) !important;
 }
+.bonus-line{
+    text-decoration-line:line-through ;
+}
+[class*="col-"]{
+    /* width: 100%; */
+}
+.bonus-font-price{
+    font-size: 14px;
+}
+
+p{
+    margin: 0 !important;
+}
+.phone-sub-info li::before{
+    content: '●';
+    font-size: 10px;
+
+}
+@media (max-width: 1200px){
+    .phone-container{
+        flex-direction: column;
+      
+        text-align: center;
+    }
+   
+    .box-p{
+        flex-direction: column;
+        text-align: center;
+        
+    
+    }
+   
+    #slider{
+        padding-top: 45px;
+        flex-direction: column;
+         
+           margin-left: -20px;
+    }
+    .img-second{
+
+        margin-bottom: 7px;
+    }
+    
+    
+   
+    
+}
+
+@media only screen and (min-width: 1024px){
+       /* .col-1{width: 20%;} */
+    .col-2{width: 20.09%;}
+     /* .col-3{width: 50%;}
+     .col-4{width: 30%;}   */
+
+     
+    }
+    
+.col{
+    float: left;
+}
+
+.mg-lb{
+    margin-top: 35px !important;
+   
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+.clear{
+
+    clear: both;
+}
+
+                    /* header */
+                    /*nav*/
 /*nav*/
 nav{
     font-family: Arial, Helvetica, sans-serif;
@@ -35,9 +112,9 @@ nav .list li a:hover, .navbar-right li a:hover, nav a:hover{
     color: black;
     background-color: rgb(154, 216, 219);
 }
-.nav>li> a:focus, .nav>li>a:hover {
-    text-decoration: none !important;
-    background-color: rgb(154, 216, 219) !important;
+.nav > li > a:focus, .nav > li > a:hover {
+    text-decoration: none;
+    background-color: rgb(154, 216, 219);
 }
 @media only screen and (max-width: 887px) {
     .header ul form{
@@ -49,54 +126,11 @@ nav .list li a:hover, .navbar-right li a:hover, nav a:hover{
         width: 100%;
     }
 }
-.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
-    background-color: rgb(52, 117, 121) !important;
-    border-color: #337ab7;
-    color: #fff;
-}
-/*end nav*/
-.bonus-line{
-    text-decoration-line:line-through ;
-}
-[class*="col-"]{
-    width: 100%;
-}
-.bonus-font-price{
-    font-size: 14px;
-}
 
-p{
-    margin: 0 !important;
-}
-.phone-sub-info li::before{
-    content: '●';
-    font-size: 10px;
-
-}
-
-@media only screen and (min-width: 1024px){
-    .col-1{width: 25%;}
-    .col-2{width: 20.2%;}
-    
-    
-    }
-.col{
-    float: left;
-}
-
-.mg-lb{
-    margin-top: 35px !important;
-   
-}
-html{
-    font-family: Arial, Helvetica, sans-serif;
-
-
-}
 
 #slider{
     padding-top: 45px;
-    position: relative;
+    
   display: flex;
 }
 
@@ -143,8 +177,9 @@ html{
 }
 /* img-banner */
 .promote-banner{
+    
     margin-top: 35px;
-    margin-left: 15px;
+    margin-left: 20px;
 }
 .img-second{
     margin-top: 4px;
@@ -154,72 +189,68 @@ html{
     margin-bottom: 5px;
 }
 /* suggestion */
-#suggestions{
-  margin-top: 15px;
-  display: flex;
 
-}
-#suggestions h3:hover .sub-suggestions{
-    
-    display: block;
-}
-
-#suggestions h3{
-    font-size: 18px;
-    font-weight: bold;
-    position: relative;
-    padding: 6px 0;  
-}
-.sub-suggestions li:hover{
-    background-color: #ccc;
-    cursor: pointer;  
-}
-.sub-suggestions li{
-    list-style: none;
-     
+#suggestions .suggestion-item{
+ text-decoration: none;
  
 }
-.sub-suggestions{
-    display: none;
-    z-index: 1;
-    position: absolute;
-    top: 100%;
-    left:0;
-    background-color: #fff;
-    border-radius: 5px;
-    min-width: 182px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+#suggestions{
+    
 }
 
-.sub-suggestions a{
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: normal;
-    color: #000;
+.suggestions-text{
+ 
+    font-size: 16px ;
     display: inline-block;
-    line-height: 38px;  
+    font-weight: bold;
 }
-#suggestions .suggestion-item{
- margin-left: 25px;
+.sub-suggestions li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px;
+   
+}
+.sub-suggestions a{
+    color: #356178;
+}
+.sub-suggestions li:hover{
+    border-radius: 3px;
+    background: #8eb3d3;
+    cursor: pointer;
+    
+}
+
+.sub-suggestions{
+ 
+display: inline-block;
+margin-left: 50px;
+margin-top: 10px;
 }
 /* content-phone */
 .phone-container{
    
-   display: flex;
+ display: flex;
+  
    color: #333;
+
 }
 .phone-list:hover{
     box-shadow: 0 0  5px rgba(0, 0, 0, 0.3);
 }
+ 
 .phone-list{
      
     border: 1px solid rgb(248, 239, 239);
     padding: 10px 15px 20px;
+   
     background-color: #fff;
+ 
 }
+
 .item-label{
     margin-left: 5px;
     margin-top: 3px;
+    margin-bottom: 10px;
     background-color: #ccc;
     display: inline-block;
     padding: 2px 3px ;
@@ -234,7 +265,7 @@ html{
 .phone-item{
    
    
-    margin-top: 15px;
+    
     text-align: center;
     overflow: hidden;
     position: relative;

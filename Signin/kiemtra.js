@@ -15,8 +15,6 @@ function validate() {
     alert("Vui lòng xác minh mật khẩu!");
     return false;
     }
-     
-    alert("Xin hãy điền đúng thông tin!")
-     
+    alert("Xin hãy điền đúng thông tin!")  
     return true;
     }
