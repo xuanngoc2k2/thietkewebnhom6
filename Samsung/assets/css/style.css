@@ -108,18 +108,19 @@ nav .list li a:hover{
 }
 .nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
     background-color: rgb(52, 117, 121) !important;
-    border-color: #337ab7;
+    border-color: #337ab7 !important;
+    color: #000;
 }
 .navbar .navbar-toggle .icon-bar {
     background-color: rgb(255, 255, 255);
 }
 nav .list li a:hover, .navbar-right li a:hover, nav a:hover{
-    color: black;
+    color: black !important;
     background-color: rgb(154, 216, 219);
 }
 .nav > li > a:focus, .nav > li > a:hover {
     text-decoration: none;
-    background-color: rgb(154, 216, 219);
+    background-color: rgb(154, 216, 219) !important;
 }
 
 
