@@ -43,7 +43,7 @@ nav .list li a:hover, .navbar-right li a:hover, nav a:hover{
 }
 @media only screen and (max-width: 887px) {
     .header ul form{
-        width: 147px;
+        width: 142px;
     }
 }
 @media only screen and (max-width: 767.5px) {
@@ -52,7 +52,7 @@ nav .list li a:hover, .navbar-right li a:hover, nav a:hover{
     }
 }
 /*end nav*/
-a img.giohang{
+/* a img.giohang{
     position: fixed;
     top: 100px;
     right: 50px;
@@ -67,7 +67,7 @@ a img.giohang{
         border-radius: 50px;
         width: 35px;
     }
-}
+} */
 /* a div.ct{
     position: absolute;
     top: ;

@@ -24,16 +24,16 @@ p{
     font-size: 10px;
 
 }
-@media (max-width: 1200px){
-    .phone-container{
-        flex-direction: column;
+@media only screen and (max-width: 1200px) {
+    .phone-container{            
+       flex-direction: column;
+       
+       }
       
-        text-align: center;
-    }
-   
+     
     .box-p{
         flex-direction: column;
-        text-align: center;
+        
         
     
     }
@@ -50,18 +50,22 @@ p{
     }
     
     
-   
-    
+
 }
 
-@media only screen and (min-width: 1024px){
-       /* .col-1{width: 20%;} */
-    .col-2{width: 20.09%;}
-     /* .col-3{width: 50%;}
-     .col-4{width: 30%;}   */
+
+
+ 
+ @media only screen and (min-width: 1300px){ 
+    .col-2{width: 20.09%;} 
+       /* .col-1{width: 20%;} 
 
      
-    }
+      .col-3{width: 50%;}
+     .col-4{width: 30%;}    */
+
+     
+     } 
     
 .col{
     float: left;
@@ -84,6 +88,7 @@ html{
                     /* header */
                     /*nav*/
 /*nav*/
+/*nav*/
 nav{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -102,7 +107,7 @@ nav .list li a:hover{
     font-size: 20px;
 }
 .nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
-    background-color: rgb(52, 117, 121);
+    background-color: rgb(52, 117, 121) !important;
     border-color: #337ab7;
 }
 .navbar .navbar-toggle .icon-bar {
@@ -116,17 +121,20 @@ nav .list li a:hover, .navbar-right li a:hover, nav a:hover{
     text-decoration: none;
     background-color: rgb(154, 216, 219);
 }
-@media only screen and (max-width: 887px) {
+
+
+@media only screen and (max-width: 886px) {
     .header ul form{
         width: 147px;
     }
 }
-@media only screen and (max-width: 767.5px) {
+@media only screen and (max-width: 200px) {
     .header ul form{
         width: 100%;
     }
 }
 /*end nav*/
+
 
 #slider{
     padding-top: 45px;
@@ -134,24 +142,19 @@ nav .list li a:hover, .navbar-right li a:hover, nav a:hover{
   display: flex;
 }
 
-#top-slider{
-    
+
+.top-slider-first >img{
+width: 100%;
+height: 100%;
+}
+.top-slider-first{
     margin-top: 35px;
-  
+    width: 65%;
 }
 
 
-.slider-item img{
-    width: 800px;
-    height: 200px;
-}
 
-.section{
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1200px;
-   
-}
+
 /* btn */
 .slider-btn{
     position: absolute;
@@ -180,13 +183,16 @@ nav .list li a:hover, .navbar-right li a:hover, nav a:hover{
     
     margin-top: 35px;
     margin-left: 20px;
+    width: 30%;
 }
 .img-second{
     margin-top: 4px;
+    width: 100%;
 }
 .img-first{
     max-height: 95px;
     margin-bottom: 5px;
+    width: 100%;
 }
 /* suggestion */
 
@@ -194,25 +200,39 @@ nav .list li a:hover, .navbar-right li a:hover, nav a:hover{
  text-decoration: none;
  
 }
-
+#suggestions{
+    
+}
+.suggestions-text:hover{
+    color: #8eb3d3;
+    cursor: pointer;
+}
 .suggestions-text{
  
     font-size: 16px ;
     display: inline-block;
     font-weight: bold;
+    color: #000;
+   
 }
-.sub-suggestions li{
+.sub-suggestions li {
     display: inline-block;
     list-style: none;
     padding: 10px;
-   
+    margin-right: 10px;
+    border: 1px solid #c4cbd4;
+    border-radius: 5px;
+    background-color: #fff;
 }
 .sub-suggestions a{
-    color: #356178;
+    color: #6299e2;
 }
-.sub-suggestions li:hover{
-    border-radius: 3px;
-    background: #8eb3d3;
+.sub-suggestions a:hover{
+    color: #6299e2;
+}
+.sub-suggestions li:hover {
+    
+    border: 1px solid #6299e2;
     cursor: pointer;
     
 }
@@ -224,6 +244,14 @@ margin-left: 50px;
 margin-top: 10px;
 }
 /* content-phone */
+#content{
+   
+}
+.section{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
 .phone-container{
    
  display: flex;

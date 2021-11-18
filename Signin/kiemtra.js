@@ -1,24 +1,34 @@
-function validate() {
-    var u = document.getElementById("username").value;
-    var p1 = document.getElementById("password").value;
-    var p2 = document.getElementById("password-repeat").value;
-     
-    if(u== " ") {
-    alert("Vui lòng nhập tên!");
-    return;
-    }
-    if(p1 == " ") {
-    alert("Vui lòng nhập mật khẩu!");
-    return;
-    }
-    if(p2 == " ") {
-    alert("Vui lòng xác minh mật khẩu!");
-    return;
-    }
-     
-    if(p1 !== p2) {
-        alert("Xác minh mật khẩu không đúng. Vui lòng xác minh lại mật khẩu!");
-        return;
-    } 
-    alert("Tạo tài khoản thành công");
+    
+    
+    var btnSubmit = document.querySelector('.submit');
+    let checkInput = document.querySelector('.register input')
+    let nameLf = document.querySelector('#username');
+    let password = document.querySelector('#password');
+    let passwordRp = document.querySelector('#password-repeat');
+    btnSubmit.onclick = () =>
+    {   
+        if(checkInput.value == " ")
+        {
+            alert("Nhap vao form");
+        }
+        else if(nameLf.value == " ")
+        {
+            alert("Hay nhap ten!!");
+        }
+        else if(password.value == " ")
+        {
+            alert(' Chua nhap mk')
+        }
+        else if(passwordRp.value == " ")
+        {
+            alert('Nhap lai mk!!!');
+        }
+        else if(passwordRp.value != password.value)
+        {
+            alert('Mat Khau ko dung');
+        }
+        else
+        {
+            alert('Đăng Ký Thành Công!!!')
+        }
     }

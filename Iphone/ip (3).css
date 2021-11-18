@@ -14,6 +14,7 @@
 /*nav*/
 nav{
     font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
 }
 nav.navbar{
     background-color: rgb(52, 117, 121);
@@ -46,15 +47,14 @@ nav .list li a:hover, .navbar-right li a:hover, nav a:hover{
 }
 @media only screen and (max-width: 887px) {
     .header ul form{
-        width: 147px;
+        width: 150px;
     }
 }
-@media only screen and (max-width: 767.5px) {
+@media only screen and (max-width: 750px) {
     .header ul form{
         width: 100%;
     }
 }
-/*end nav*/
 .bonus-line{
     text-decoration-line:line-through ;
 }
@@ -64,16 +64,12 @@ nav .list li a:hover, .navbar-right li a:hover, nav a:hover{
 .header navbar-fixed-top{
 	background-color: aqua;
 }
-.col{
-    float: left;
+#hot-link img{
+    margin-top: 20px;
 }
 .col-w5{
     width: 100%;
     
-}
-.mg-lb{
-    margin-top: 35px !important;
-   
 }
 html{
     font-family: Arial, Helvetica, sans-serif;
@@ -82,26 +78,15 @@ html{
 }
 .img-second{
 
-        margin-bottom: 7px;
+        margin-bottom: 10px;
     }
     
 
-#top-slider{
-    
-    margin-top: 35px;
-   display: flex;
-   align-items: center;
-   flex-wrap: nowrap;
-   overflow-x: auto;
-   scroll-behavior: smooth;
-   scroll-snap-type: x mandatory;
-}
+
 
 .section{
     margin-left: 50px;
     margin-right: 50px;
-    
-   
 }
 
 
@@ -115,12 +100,15 @@ html{
     
     display: block;
 }
-
+h1:hover{
+    color: aqua;
+}
 #suggestions h3{
     font-size: 18px;
     font-weight: bold;
     position: relative;
     padding: 6px 0;  
+    
 }
 .sub-suggestions li:hover{
     background-color: #ccc;
@@ -128,10 +116,9 @@ html{
 }
 .sub-suggestions li{
     list-style: none;
-     
- 
 }
 .sub-suggestions{
+    
     display: none;
     z-index: 1;
     position: absolute;
@@ -156,22 +143,27 @@ html{
 }
 #suggestions .suggestion-item{
  margin-left: 25px;
- 
+}
+/*--end sugestion---*/
+.container-slider {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 30px;
+    margin-left: 30px;
 
 }
 /* content-phone */
 .phone-container{
    display: flex;
-   color: #333;
 }
 .phone-list:hover{
-    box-shadow: 0 0  5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0  7px rgba(0, 0, 0, 0.3);
 }
 .phone-list{
     border: 1px solid rgb(248, 239, 239);
     padding: 10px 15px 20px;
 }
-.item-label{
+.item{
     margin-left: 5px;
     margin-top: 3px;
     background-color: #ccc;
@@ -180,6 +172,8 @@ html{
 }
 .tragop{
     font-size: 12px;
+    padding: 1px;
+    margin: 1px;
 }
 .phone-info p{
     padding-top: 5px;
@@ -189,21 +183,18 @@ html{
 
     margin-top: 15px;
     text-align: center;
-    overflow: hidden;
     position: relative;
     padding-bottom: 5px;
 }
-.lb-img{
-    width: 45px;
-    height: 45px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
+
 .phone-img{
-   height: 208.8px;
-   width: 208.8;
+   height: 200px;
+   width: 200px;
+   transition: all 0.5s ease;
  
+}
+.phone-img:hover{
+    transform: translateY(-15px);
 }
 .phone-sub-info li{
     list-style: none;
@@ -232,10 +223,11 @@ html{
     font-size: 12px;
 
 }
+
 /* icon star */
-.checked{
-    margin-top: 3px;
-    color: orange;
+.evaluate{
+    margin-top: 5px;
+    color:orange;
 }
 .ratinng{
     font-size: 12px;
@@ -243,13 +235,13 @@ html{
 .fa-star{
     font-size: 14px;
 }
-@media (max-width: 887px){
+
+@media (max-width: 1300px){
     .phone-container{
         flex-direction: column;
     	text-align: center;
-		
 		clear: both;
-		
+		display: flex;
     }
     .quoc{
         flex-direction: column;
@@ -257,6 +249,24 @@ html{
 	}
     
     }
+    @media (max-width: 280px){
+        .phone-container{
+            flex-direction: column;
+            text-align: center;
+        
+            clear: both;
+            
+        }
+        .quoc{
+            flex-direction: column;
+            text-align: center;
+        }
+        .phone-img{
+            flex-direction: column;
+            text-align: center;
+        }
+        
+    
 /*footer*/
 .footer{
     padding-top: 20px;

@@ -3,27 +3,64 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <!-- Nhúng file CSS -->
 <link rel="stylesheet" href="style.css" />
+<script type="text/javascript">
+    function displayresult(){
+        var arr = document.getElementsByTagName('input');
+        var user = arr[0].value;
+        var password = arr[1].value;
+        var confirmpassword = arr[2].value;
+        var email = arr[3].value;
+
+        if(user==""){
+            alert('Hãy nhập Username ');
+        return;
+        }
+        if(password==""){
+            alert('Hãy nhập Password ');
+        return;
+        }
+        if(confirmpassword==""){
+            alert('Hãy  xác nhận Password  ');
+        return;
+        }
+        if(email==""){
+            alert('Hãy nhập Email ');
+        return;
+        }
+        if(user.length<10){
+            alert('Username phải nhiều hơn 10 kí tự. Hãy nhập lại');
+        return;
+        }   
+        if(password!==confirmpassword){
+            alert('Mật khẩu không khớp. Hãy nhập lại ');
+        }
+        else{
+            alert('Complete');
+        }
+    }
+</script>
 </head>
 <body>
-<!-- Nhúng file JavaScript -->
-<script language="javascript" src="kiemtra.js"></script>
-<form action="" method="POST" onsubmit="return validate()">
+<form action="">
 <div class="register">
-<h1>Đăng ký</h1>
-<p>Vui lòng điền thông tin để đăng ký</p>
-<hr>
-<label for="username"><b>Tên đăng nhập</b></label>
-<input type="text" placeholder="Họ và tên" name="username" id="username">
-<label for="password"><b>Mật khẩu</b></label>
-<input type="password" placeholder="******" name="password" id="password">
-<label for="password-repeat"><b>Nhập lại mật khẩu</b></label>
-<input type="password" placeholder="******" name="password-repeat" id="password-repeat">
-<hr>
-<p> <input type="checkbox"> Để tạo tài khoản vui lòng đồng ý với <a href="#">điều khoản</a> của chúng tôi .</p>
-<button type="submit" class="submit">Đăng ký</button>
+    <h1>Đăng ký</h1>
+    <p>Vui lòng điền thông tin để đăng ký</p>
+    <hr>
+    <label>User name: </label>
+	<input type="text" name="user"><br>
+	<label>Password: </label>
+	<input type="password" name="password"><br>
+	<label>Confirm password:</label>
+	<input type="password" name="confirmpassword"><br>
+	<label>Email:</label>
+	<input type="text" name="email"><br>
+    <hr>
+    <p> <input type="checkbox"> Để tạo tài khoản vui lòng đồng ý với <a href="#">điều khoản</a> của chúng tôi .</p>
+    <input type="button" value="ĐĂNG KÝ " onclick="displayresult();">
+    
 </div>
 <div class="register login">
-<p>Bạn đã có tài khoản rồi? <a href="../Login/login.html">Đăng nhập</a>.</p>
+    <p>Bạn đã có tài khoản rồi? <a href="../Login/login.html">Đăng nhập</a>.</p>
 </div>
 </form>
 </body>

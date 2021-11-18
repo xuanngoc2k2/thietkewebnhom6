@@ -46,6 +46,9 @@ nav .list li a:hover, .navbar-right li a:hover, nav a:hover{
   text-decoration: none;
   background-color: rgb(154, 216, 219);
 }
+.nav > li > a:active{
+  color: #fff;
+}
 @media only screen and (max-width: 887px) {
   .header ul form{
       width: 147px;
@@ -57,13 +60,6 @@ nav .list li a:hover, .navbar-right li a:hover, nav a:hover{
   }
 }
 /*end nav*/
-
-
-
-
-
-
-
         /* Slideshow container */
 #slider{
   padding-top: 45px;
