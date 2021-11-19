@@ -9,9 +9,6 @@ body{
 .bonus-line{
     text-decoration-line:line-through ;
 }
-[class*="col-"]{
-    /* width: 100%; */
-}
 .bonus-font-price{
     font-size: 14px;
 }
@@ -201,9 +198,6 @@ height: 100%;
  text-decoration: none;
  
 }
-#suggestions{
-    
-}
 .suggestions-text:hover{
     color: #8eb3d3;
     cursor: pointer;
@@ -245,9 +239,6 @@ margin-left: 50px;
 margin-top: 10px;
 }
 /* content-phone */
-#content{
-   
-}
 .section{
     margin-left: auto;
     margin-right: auto;
